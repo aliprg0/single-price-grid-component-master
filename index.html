@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyan: "hsl(179, 62%, 43%)",
+              "bright-yellow": "hsl(71, 73%, 54%)",
+              "light-gray": "hsl(204, 43%, 93%)",
+              "grayish-blue": "hsl(218, 22%, 67%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="flex bg-cyan items-center justify-center min-h-screen bg-light-gray"
+  >
+    <div class="max-w-2xl bg-white rounded-xl shadow overflow-hidden">
+      <div class="p-9">
+        <div class="text-cyan font-bold text-[1.5rem]">Join our community</div>
+        <div class="text-bright-yellow font-bold mt-5 mb-3">
+          30-day, hassle-free money back guarantee
+        </div>
+        <div class="text-grayish-blue text-[1.1rem]">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </div>
+      </div>
+      <div class="flex flex-row">
+        <div class="bg-teal-600 min-w-[50%] p-11 space-y-7">
+          <div class="text-white text-xl">Monthly Subscription</div>
+          <div class="text-gray-300">
+            <span class="text-2xl text-white mr-5">$29</span> per month
+          </div>
+          <div class="text-gray-200">
+            Full access for less than &dollar;1 a day
+          </div>
+          <button
+            class="text-white min-w-[100%] bg-bright-yellow h-12 font-bold rounded-lg shadow-xl"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div class=" bg-teal-500 p-10 min-w-[50%]">
+          <div class=" text-white font-bold text-lg">Why Us</div>
+          <div class=" text-light-gray mt-4">
+            Tutorials by industry experts <br> Peer &amp; expert code review <br> Coding
+            exercises <br> Access to our GitHub repos <br> Community forum <br> Flashcard decks <br>
+            New videos every week
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
